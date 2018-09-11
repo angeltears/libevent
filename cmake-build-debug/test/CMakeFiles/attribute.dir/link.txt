@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/attribute.dir/attribute.cc.o  -o attribute 
