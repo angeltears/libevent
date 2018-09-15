@@ -47,6 +47,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "test/CMakeFiles/lock_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/malloc_test.dir/DependInfo.cmake"
   "test/CMakeFiles/attribute.dir/DependInfo.cmake"
   "test/CMakeFiles/test1.dir/DependInfo.cmake"
   )

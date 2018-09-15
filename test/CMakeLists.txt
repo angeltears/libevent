@@ -11,4 +11,13 @@ target_link_libraries(test1 event)
 
 
 add_executable(attribute
-                    attribute.cc)
+                    attribute.cc )
+
+add_executable(malloc_test
+        malloc_test.cc)
+target_link_libraries(malloc_test event)
+
+
+add_executable(lock_test
+        lock_test.cc)
+target_link_libraries(lock_test event  event_pthreads)

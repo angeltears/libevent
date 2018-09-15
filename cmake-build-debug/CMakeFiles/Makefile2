@@ -63,12 +63,16 @@ CMAKE_BINARY_DIR = /home/onter/project/hub/libevent/cmake-build-debug
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
+test/all: test/CMakeFiles/lock_test.dir/all
+test/all: test/CMakeFiles/malloc_test.dir/all
 test/all: test/CMakeFiles/attribute.dir/all
 test/all: test/CMakeFiles/test1.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/lock_test.dir/clean
+test/clean: test/CMakeFiles/malloc_test.dir/clean
 test/clean: test/CMakeFiles/attribute.dir/clean
 test/clean: test/CMakeFiles/test1.dir/clean
 
@@ -78,6 +82,80 @@ test/clean: test/CMakeFiles/test1.dir/clean
 test/preinstall:
 
 .PHONY : test/preinstall
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/lock_test.dir
+
+# All Build rule for target.
+test/CMakeFiles/lock_test.dir/all:
+	$(MAKE) -f test/CMakeFiles/lock_test.dir/build.make test/CMakeFiles/lock_test.dir/depend
+	$(MAKE) -f test/CMakeFiles/lock_test.dir/build.make test/CMakeFiles/lock_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/onter/project/hub/libevent/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target lock_test"
+.PHONY : test/CMakeFiles/lock_test.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/lock_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/lock_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/onter/project/hub/libevent/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/lock_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/onter/project/hub/libevent/cmake-build-debug/CMakeFiles 0
+.PHONY : test/CMakeFiles/lock_test.dir/rule
+
+# Convenience name for target.
+lock_test: test/CMakeFiles/lock_test.dir/rule
+
+.PHONY : lock_test
+
+# clean rule for target.
+test/CMakeFiles/lock_test.dir/clean:
+	$(MAKE) -f test/CMakeFiles/lock_test.dir/build.make test/CMakeFiles/lock_test.dir/clean
+.PHONY : test/CMakeFiles/lock_test.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/lock_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/malloc_test.dir
+
+# All Build rule for target.
+test/CMakeFiles/malloc_test.dir/all:
+	$(MAKE) -f test/CMakeFiles/malloc_test.dir/build.make test/CMakeFiles/malloc_test.dir/depend
+	$(MAKE) -f test/CMakeFiles/malloc_test.dir/build.make test/CMakeFiles/malloc_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/onter/project/hub/libevent/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target malloc_test"
+.PHONY : test/CMakeFiles/malloc_test.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/malloc_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/malloc_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/onter/project/hub/libevent/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/malloc_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/onter/project/hub/libevent/cmake-build-debug/CMakeFiles 0
+.PHONY : test/CMakeFiles/malloc_test.dir/rule
+
+# Convenience name for target.
+malloc_test: test/CMakeFiles/malloc_test.dir/rule
+
+.PHONY : malloc_test
+
+# clean rule for target.
+test/CMakeFiles/malloc_test.dir/clean:
+	$(MAKE) -f test/CMakeFiles/malloc_test.dir/build.make test/CMakeFiles/malloc_test.dir/clean
+.PHONY : test/CMakeFiles/malloc_test.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/malloc_test.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/attribute.dir
@@ -123,7 +201,7 @@ clean: test/CMakeFiles/attribute.dir/clean
 test/CMakeFiles/test1.dir/all:
 	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/depend
 	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/onter/project/hub/libevent/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target test1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/onter/project/hub/libevent/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target test1"
 .PHONY : test/CMakeFiles/test1.dir/all
 
 # Include target in all.

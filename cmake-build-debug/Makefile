@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lock_test
+
+# Build rule for target.
+lock_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lock_test
+.PHONY : lock_test
+
+# fast build rule for target.
+lock_test/fast:
+	$(MAKE) -f test/CMakeFiles/lock_test.dir/build.make test/CMakeFiles/lock_test.dir/build
+.PHONY : lock_test/fast
+
+#=============================================================================
+# Target rules for targets named malloc_test
+
+# Build rule for target.
+malloc_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 malloc_test
+.PHONY : malloc_test
+
+# fast build rule for target.
+malloc_test/fast:
+	$(MAKE) -f test/CMakeFiles/malloc_test.dir/build.make test/CMakeFiles/malloc_test.dir/build
+.PHONY : malloc_test/fast
+
+#=============================================================================
 # Target rules for targets named attribute
 
 # Build rule for target.
@@ -144,6 +170,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... lock_test"
+	@echo "... malloc_test"
 	@echo "... attribute"
 	@echo "... test1"
 .PHONY : help

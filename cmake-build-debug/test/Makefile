@@ -111,6 +111,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/lock_test.dir/rule:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/lock_test.dir/rule
+.PHONY : test/CMakeFiles/lock_test.dir/rule
+
+# Convenience name for target.
+lock_test: test/CMakeFiles/lock_test.dir/rule
+
+.PHONY : lock_test
+
+# fast build rule for target.
+lock_test/fast:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f test/CMakeFiles/lock_test.dir/build.make test/CMakeFiles/lock_test.dir/build
+.PHONY : lock_test/fast
+
+# Convenience name for target.
+test/CMakeFiles/malloc_test.dir/rule:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/malloc_test.dir/rule
+.PHONY : test/CMakeFiles/malloc_test.dir/rule
+
+# Convenience name for target.
+malloc_test: test/CMakeFiles/malloc_test.dir/rule
+
+.PHONY : malloc_test
+
+# fast build rule for target.
+malloc_test/fast:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f test/CMakeFiles/malloc_test.dir/build.make test/CMakeFiles/malloc_test.dir/build
+.PHONY : malloc_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/attribute.dir/rule:
 	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/attribute.dir/rule
 .PHONY : test/CMakeFiles/attribute.dir/rule
@@ -167,6 +197,60 @@ attribute.cc.s:
 	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f test/CMakeFiles/attribute.dir/build.make test/CMakeFiles/attribute.dir/attribute.cc.s
 .PHONY : attribute.cc.s
 
+lock_test.o: lock_test.cc.o
+
+.PHONY : lock_test.o
+
+# target to build an object file
+lock_test.cc.o:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f test/CMakeFiles/lock_test.dir/build.make test/CMakeFiles/lock_test.dir/lock_test.cc.o
+.PHONY : lock_test.cc.o
+
+lock_test.i: lock_test.cc.i
+
+.PHONY : lock_test.i
+
+# target to preprocess a source file
+lock_test.cc.i:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f test/CMakeFiles/lock_test.dir/build.make test/CMakeFiles/lock_test.dir/lock_test.cc.i
+.PHONY : lock_test.cc.i
+
+lock_test.s: lock_test.cc.s
+
+.PHONY : lock_test.s
+
+# target to generate assembly for a file
+lock_test.cc.s:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f test/CMakeFiles/lock_test.dir/build.make test/CMakeFiles/lock_test.dir/lock_test.cc.s
+.PHONY : lock_test.cc.s
+
+malloc_test.o: malloc_test.cc.o
+
+.PHONY : malloc_test.o
+
+# target to build an object file
+malloc_test.cc.o:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f test/CMakeFiles/malloc_test.dir/build.make test/CMakeFiles/malloc_test.dir/malloc_test.cc.o
+.PHONY : malloc_test.cc.o
+
+malloc_test.i: malloc_test.cc.i
+
+.PHONY : malloc_test.i
+
+# target to preprocess a source file
+malloc_test.cc.i:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f test/CMakeFiles/malloc_test.dir/build.make test/CMakeFiles/malloc_test.dir/malloc_test.cc.i
+.PHONY : malloc_test.cc.i
+
+malloc_test.s: malloc_test.cc.s
+
+.PHONY : malloc_test.s
+
+# target to generate assembly for a file
+malloc_test.cc.s:
+	cd /home/onter/project/hub/libevent/cmake-build-debug && $(MAKE) -f test/CMakeFiles/malloc_test.dir/build.make test/CMakeFiles/malloc_test.dir/malloc_test.cc.s
+.PHONY : malloc_test.cc.s
+
 test1.o: test1.cpp.o
 
 .PHONY : test1.o
@@ -202,11 +286,19 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... lock_test"
+	@echo "... malloc_test"
 	@echo "... attribute"
 	@echo "... test1"
 	@echo "... attribute.o"
 	@echo "... attribute.i"
 	@echo "... attribute.s"
+	@echo "... lock_test.o"
+	@echo "... lock_test.i"
+	@echo "... lock_test.s"
+	@echo "... malloc_test.o"
+	@echo "... malloc_test.i"
+	@echo "... malloc_test.s"
 	@echo "... test1.o"
 	@echo "... test1.i"
 	@echo "... test1.s"
